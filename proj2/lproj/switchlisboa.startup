@@ -1,0 +1,10 @@
+brctl addbr switchlisboa
+
+brctl addif switchlisboa eth0
+ip link set dev eth0 up
+brctl addif switchlisboa eth1
+ip link set dev eth1 up
+brctl addif switchlisboa eth2
+ip link set dev eth2 up
+
+ip link set dev switchlisboa up

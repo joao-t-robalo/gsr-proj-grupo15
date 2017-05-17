@@ -1,0 +1,23 @@
+$TTL    60000
+@               IN      SOA     serverext.bomcliente.gsr.    root.serverext.bomcliente.gsr. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+@               IN      NS      serverext.bomcliente.gsr.
+serverext		IN 		A 		10.0.0.2
+@ 						IN MX 5 mail.bomcliente.gsr.
+
+
+www 					IN	A 	10.0.0.2
+imap					IN 	A 	10.0.0.2
+pop						IN 	A 	10.0.0.2
+mail					IN 	A 	10.0.0.2
+
+pcext					IN 	A 	10.0.0.6
+
+
+
+

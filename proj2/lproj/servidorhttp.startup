@@ -1,0 +1,8 @@
+ip addr add dev eth0 10.0.0.131/28
+ip link set dev eth0 up
+
+ip route add 0.0.0.0/0 via 10.0.0.132
+/etc/init.d/squid start
+/etc/init.d/bind start
+/etc/init.d/snmpd start
+

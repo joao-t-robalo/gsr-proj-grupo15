@@ -1,0 +1,15 @@
+ip link set dev eth0 up
+ip link set dev eth1 up
+ip link set dev eth2 up
+ip link set dev eth3 up
+
+
+brctl addbr swpub
+
+brctl addif swpub eth0
+brctl addif swpub eth1
+brctl addif swpub eth2
+brctl addif swpub eth3
+
+
+ip link set dev swpub up

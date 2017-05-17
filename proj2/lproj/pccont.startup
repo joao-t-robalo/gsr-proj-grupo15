@@ -1,0 +1,6 @@
+#Atribuicao de ips as interfaces (DHCP)
+##################################################
+/etc/init.d/networking restart
+
+adduser --disabled-password --gecos "" contabilidade
+echo 'contabilidade:contabilidade' | chpasswd

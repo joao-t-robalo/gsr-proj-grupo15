@@ -1,0 +1,6 @@
+#Atribuicao de ips as interfaces (DHCP)
+##################################################
+/etc/init.d/networking restart
+
+adduser --disabled-password --gecos "" lisboa-contab2
+echo 'lisboa-contab2:lisboa-contab2' | chpasswd

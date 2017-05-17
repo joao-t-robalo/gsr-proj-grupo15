@@ -1,0 +1,3 @@
+.                   IN  NS    dnsserver.
+dnsserver.        IN  A     10.0.0.21
+

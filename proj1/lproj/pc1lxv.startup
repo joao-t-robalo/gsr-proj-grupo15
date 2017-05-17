@@ -1,0 +1,3 @@
+#Atribuicao de ips as interfaces (DHCP)
+##################################################
+/etc/init.d/networking restart

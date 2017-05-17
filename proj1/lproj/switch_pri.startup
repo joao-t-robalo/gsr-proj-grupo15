@@ -1,0 +1,12 @@
+brctl addbr sw_pri
+
+brctl addif sw_pri eth0
+ip link set dev eth0 up
+
+brctl addif sw_pri eth1
+ip link set dev eth1 up
+
+brctl addif sw_pri eth2
+ip link set dev eth2 up
+
+ip link set dev sw_pri up

@@ -1,0 +1,40 @@
+$TTL    60000
+@               IN      SOA     dnspri.contatudo.gsr.    root.dnspri.contatudo.gsr. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+@               IN      NS      dnspri.contatudo.gsr.
+dnspri 			IN 		A 		10.0.0.129
+@               IN      NS     	dnssec.contatudo.gsr.
+dnssec 			IN 		A 		10.0.0.130
+@               IN      MX 5    mail.contatudo.gsr.
+servidorhttp 	IN 		A	 	10.0.0.131
+
+intranet		IN 		A		10.0.0.130
+clientes 		IN 		A		10.0.0.130
+www				IN 		A 		10.0.0.130
+	
+imap			IN		A		10.0.0.129
+pop				IN		A		10.0.0.129
+mail			IN		A		10.0.0.129
+
+lisboapc1		IN 		A 		192.168.0.10
+lisboapc2		IN 		A		192.168.0.11
+pc1lxv			IN 		A 		10.0.0.162
+pc2lxv			IN 		A 		10.0.0.163
+portopc1		IN 		A		192.168.0.18
+portopc2		IN      A		192.168.0.19
+pc1portov		IN 		A 		10.0.0.178
+pc2portov		IN 		A 		10.0.0.179
+pccont			IN 		A 		10.0.0.146
+pcadmin			IN 		A 		10.0.0.147
+pcrh			IN 		A 		10.0.0.148
+monitorserver	IN 		A		192.168.0.1
+fileserver 		IN 		A 		192.168.0.2
+
+
+
+

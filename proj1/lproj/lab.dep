@@ -1,0 +1,13 @@
+pcrh pcadmin pccont : switchsede rsede
+lisboapc1 lisboapc2 pc1lxv pc2lxv : switchlisboa rlisboa
+switchlisboa : rlisboa
+
+portopc1 portopc2 pc1portov pc2portov : switchporto rporto
+switchporto: rporto
+pcext serverext : rext
+
+rporto rlisboa : rsede
+dnspri dnssec servidorhttp: switchpub rsede dnsserver
+monitorserver fileserver : switchpri rsede
+switchpub switchpri switchsede : rsede
+dnsserver rsede rext : rinternet
